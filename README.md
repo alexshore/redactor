@@ -2,8 +2,6 @@
 
 ## General Usage
 
----
-
 ### Building
 
 - Build docker image with `docker build -t redactor .`
@@ -25,8 +23,6 @@
 - Access by sending json data to `<URL>/redact` in a POST request
 
 ## CI Workflow
-
----
 
 ### Services
 
@@ -61,8 +57,6 @@ Should use a similar build process as written above to build the docker image bu
 Should use the cli api of whichever server provider you're using combined with your CI pipelines service to deploy the service and deployment onto the available k8s cluster(s).
 
 ## Zero-Downtime Upgrades
-
----
 
 Modern Kubernetes has a variety of ways to perform Zero-Downtime Upgrades and most kubernetes server providers will also have their own smoothed out processes to do the same thing within their APIs.
 
