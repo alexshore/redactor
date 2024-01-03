@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redactor-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: redactor
+  template:
+    metadata:
+      labels:
+        app: redactor
+    spec:
+      containers:
+      - name: redactor
+        image: kntrllr/redactor
+        ports:
+        - containerPort: 5000
